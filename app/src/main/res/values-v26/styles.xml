@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * ===
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ===
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+-->
+<resources>
+
+    <style name="Theme.SemiColon.TabStrip">
+
+        <item name="android:paddingVertical">@dimen/tab_strip_margin_vertical</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Main.Card">
+
+        <item name="android:layout_marginHorizontal">@dimen/main_cards_margin_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Main.Card.Title">
+
+        <item name="android:paddingVertical">@dimen/main_cards_title_padding_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Main.Card.Value">
+
+        <item name="android:paddingVertical">@dimen/main_cards_value_padding_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_subtitle_size</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Main.CardNest">
+
+        <item name="android:layout_marginHorizontal">@dimen/main_cardnest_margin_horizontal</item>
+        <item name="android:paddingTop">@dimen/main_cardnest_padding_top</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeList.Card">
+
+        <item name="android:layout_marginVertical">@dimen/codelist_card_margin_vertical</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeList.Recycler">
+
+        <item name="android:paddingHorizontal">@dimen/codelist_recycler_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.CardNest">
+
+        <item name="android:paddingVertical">@dimen/codedetails_cardnest_padding_vertical</item>
+        <item name="android:paddingHorizontal">@dimen/codedetails_cardnest_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.InfoFrame">
+
+        <item name="android:paddingHorizontal">@dimen/codedetails_card_frame_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.ErrorBox">
+
+        <item name="android:paddingVertical">@dimen/codedetails_errorbox_padding_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorTextPlaceholder</item>
+        <item name="android:textSize">@dimen/text_headline_size</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.Name">
+
+        <item name="android:textSize">@dimen/text_headline_size</item>
+        <item name="android:paddingVertical">@dimen/codedetails_card_name_padding_vertical</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.VersionTitle">
+
+        <item name="android:layout_marginVertical">
+            @dimen/codedetails_versioninfo_frame_margin_vertical
+        </item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.ButtonsNest">
+
+        <item name="android:paddingVertical">@dimen/quotes_buttons_nest_padding_vertical</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.CardNest">
+
+        <item name="android:paddingVertical">@dimen/quotes_cardnest_padding_vertical</item>
+        <item name="android:paddingHorizontal">@dimen/quotes_cardnest_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.InfoFrame">
+
+        <item name="android:paddingHorizontal">@dimen/quotes_card_frame_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.ItemLayout">
+
+        <item name="android:paddingHorizontal">@dimen/quote_item_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.Label">
+
+        <item name="android:paddingVertical">@dimen/quote_label_padding_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.AddRepo.CardNest">
+
+        <item name="android:paddingVertical">@dimen/addrepo_cardnest_padding_vertical</item>
+        <item name="android:paddingHorizontal">@dimen/addrepo_cardnest_padding_horiziontal</item>
+
+    </style>
+
+</resources>

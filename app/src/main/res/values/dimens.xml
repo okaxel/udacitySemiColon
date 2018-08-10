@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * ===
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ===
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+-->
+<resources>
+
+    <!-- General values mostly from Material Design stuff -->
+    <dimen name="appbar_elevation">4dp</dimen>
+
+    <dimen name="card_elevation">1dp</dimen>
+
+    <dimen name="text_display_2_size">45sp</dimen>
+    <dimen name="text_headline_size">24sp</dimen>
+    <dimen name="text_title_size">20sp</dimen>
+    <dimen name="text_subtitle_size">16sp</dimen>
+    <dimen name="text_caption_size">12sp</dimen>
+
+    <!-- Cross-Activity values -->
+    <dimen name="tab_strip_margin_vertical">8dp</dimen>
+
+    <!-- Cross-Activity values - AdView Nest -->
+    <dimen name="ad_margin_horizontal">16dp</dimen>
+    <dimen name="ad_margin_vertical">16dp</dimen>
+
+    <!-- Main Activity -->
+
+    <!-- Main Activity Cards -->
+    <dimen name="main_cards_margin_horizontal">8dp</dimen>
+
+    <dimen name="main_cards_title_padding_vertical">8dp</dimen>
+
+    <dimen name="main_cards_label_padding_after">16dp</dimen>
+
+    <dimen name="main_cards_value_padding_vertical">8dp</dimen>
+
+    <!-- Main Activity Cards Nest -->
+    <dimen name="main_cardnest_padding_top">16dp</dimen>
+
+    <dimen name="main_cardnest_margin_horizontal">8dp</dimen>
+
+    <!-- Code List Activity -->
+
+    <!-- Code List Activity - RecyclerView -->
+    <dimen name="codelist_recycler_padding_horizontal">16dp</dimen>
+
+    <!-- Code List Activity - Cards -->
+    <dimen name="codelist_card_margin_vertical">4dp</dimen>
+    <dimen name="codelist_card_layout_margin">8dp</dimen>
+
+    <!-- Code Details Activity -->
+    <dimen name="codedetails_errorbox_padding_vertical">16dp</dimen>
+
+    <dimen name="codedetails_versioncard_margin_top">16dp</dimen>
+
+    <dimen name="codedetails_versioninfo_frame_margin_vertical">16dp</dimen>
+    <dimen name="codedetails_versioninfo_subtitle_margin_bottom">8dp</dimen>
+
+    <!-- Code Details Activity - Cards Nest -->
+    <dimen name="codedetails_cardnest_padding_horizontal">32dp</dimen>
+    <dimen name="codedetails_cardnest_padding_vertical">8dp</dimen>
+
+    <!-- Code Details Activity - Cards -->
+    <dimen name="codedetails_card_frame_padding_horizontal">16dp</dimen>
+    <dimen name="codedetails_card_name_padding_vertical">16dp</dimen>
+    <dimen name="codedetails_card_fields_padding_between">2dp</dimen>
+    <dimen name="codedetails_card_fields_padding_around">16dp</dimen>
+
+    <!-- Quotes Activity -->
+
+    <!-- Quotes Activity - Card -->
+    <dimen name="quotes_card_frame_padding_horizontal">16dp</dimen>
+    <dimen name="quotes_buttons_nest_padding_vertical">16dp</dimen>
+    <dimen name="quote_label_padding_vertical">16dp</dimen>
+    <dimen name="quote_text_padding_top">16dp</dimen>
+    <dimen name="quote_items_padding_between">8dp</dimen>
+    <dimen name="quote_author_padding_bottom">16dp</dimen>
+    <dimen name="quote_item_padding_horizontal">16dp</dimen>
+
+    <!-- Quotes Activity - Cards Nest -->
+    <dimen name="quotes_cardnest_padding_horizontal">32dp</dimen>
+    <dimen name="quotes_cardnest_padding_vertical">8dp</dimen>
+
+    <!-- Add Repository Activity -->
+
+    <!-- Add Repository Activity - Card Nest -->
+    <dimen name="addrepo_cardnest_padding_vertical">8dp</dimen>
+    <dimen name="addrepo_cardnest_padding_horiziontal">32dp</dimen>
+
+    <!-- Add Repository Activity - Card -->
+    <dimen name="addrepo_card_frame_padding">16dp</dimen>
+    <dimen name="addrepo_card_explanation_padding_bottom">16dp</dimen>
+    <dimen name="addrepo_card_label_padding_top">16dp</dimen>
+    <dimen name="addrepo_card_result_padding_top">16dp</dimen>
+    <dimen name="addrepo_card_result_padding_bottom">32dp</dimen>
+
+    <!-- Widget -->
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+
+    <dimen name="widget_fresh_info_padding">8dp</dimen>
+    <dimen name="widget_quote_padding">8dp</dimen>
+    <dimen name="widget_author_padding">8dp</dimen>
+
+</resources>

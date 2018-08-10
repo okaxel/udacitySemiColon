@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "508893813904",
+    "firebase_url": "https://semicolon-14705.firebaseio.com",
+    "project_id": "semicolon-14705",
+    "storage_bucket": "semicolon-14705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508893813904:android:ce562cbc34750d21",
+        "android_client_info": {
+          "package_name": "hu.drorszagkriszaxel.semicolon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508893813904-b1d3fnhqr1q24o9pu92oep43flhh2j8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hu.drorszagkriszaxel.semicolon",
+            "certificate_hash": "9f70e32f6db696e55eb4b240cf72677c520f974a"
+          }
+        },
+        {
+          "client_id": "508893813904-ppfm862faefib42986ut48fcrsjal5a9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSnbI9egaRkQpPh1owSkjJgbjz3yrRVJ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508893813904-ppfm862faefib42986ut48fcrsjal5a9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

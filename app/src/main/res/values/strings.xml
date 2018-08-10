@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * ===
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ===
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+-->
+<resources>
+
+    <!-- Application basics -->
+    <string name="app_name">SemiColon</string>
+
+    <!-- General texts -->
+    <string name="text_code_no_version">No version data.</string>
+    <string name="text_fabe_send_with">Share it with…</string>
+
+    <string name="quote_placeholder">
+        „A good quote can make life better and developer more motivated…”
+    </string>
+
+    <string name="author_placeholder">SemiColon Developer</string>
+
+    <!-- Might not translate this but never know. If you plan to translate this
+    better think about it for a while. -->
+    <string name="quote_formatted">„%s”</string>
+
+    <!-- By translation please take care about goo poistioning of parameters. -->
+    <string name="text_repo_name">%s from %s</string>
+
+    <string name="new_version_format">%s NEW!</string>
+
+    <!-- SnackBar general texts -->
+    <string name="snack_action_retry">RETRY</string>
+
+    <!-- Dialog general texts -->
+    <string name="dialog_button_positive">YRS</string>
+    <string name="dialog_button_negative">NO</string>
+
+    <!-- Dialog - Add Repo Code  -->
+    <string name="dialog_add_title">Add repository…</string>
+    <string name="dialog_add_repo_owner">Owner:</string>
+    <string name="dialog_add_repo_name">Name:</string>
+    <string name="dialog_add_hekper">Example:\n <b>github.com/owner/name/</b></string>
+
+    <!-- Dialog - Add Repo Code - SnackBar texts -->
+    <string name="snack_dialog_add_nothing">No repository added…</string>
+
+    <!-- Dialog - Delete Repo Code  -->
+    <string name="dialog_delete_title">Delete repository…</string>
+    <string name="dialog_delete_format">Do you really want to delete %s from the list?</string>
+
+    <!-- Toasts (Only when SnackBar is'nt solution...) -->
+    <string name="toast_deleted_format">%s is deleted.</string>
+
+    <!-- Main Activity -->
+    <string name="cd_main_quote">Icon for quotes</string>
+    <string name="cd_main_code">Icon for libraries</string>
+
+    <string name="label_code_title">Libraries</string>
+    <string name="label_code_count">listed</string>
+    <string name="label_code_liked">liked</string>
+    <string name="label_code_fresh">new</string>
+
+    <string name="label_quote_title">Quotes</string>
+    <string name="label_quote_count">shown</string>
+    <string name="label_quote_liked">liked</string>
+    <string name="label_quote_hidden">hidden</string>
+
+    <string name="snack_first_run">
+        No databases yet! SemiColon collects data, it can take a while.
+    </string>
+
+    <string name="snack_first_run_connect">
+        Please connect to the internet, because no databases available yet!
+    </string>
+
+    <string name="snack_welcome_format">Welcome! Glad to see here from: <b>%s</b></string>
+
+    <!-- Code List Activity -->
+    <string name="activity_code_list_label">Libraries</string>
+
+    <string-array name="tab_labels_code">
+        <item>Liked lbraries</item>
+        <item>All libraries</item>
+        <item>Fresh libraries</item>
+    </string-array>
+
+    <!-- Code List Activity Fragments -->
+    <string name="tv_no_code_placeholder">No library data available.</string>
+    <string name="tv_no_code_all">No library listed yet.</string>
+    <string name="tv_no_code_liked">No library liked yet.</string>
+    <string name="tv_no_code_fresh">No new library version.</string>
+
+    <string name="cd_code_list_placeholder">No image loaded yet</string>
+    <string name="cd_code_fresh_off">No image, library is up to date.</string>
+    <string name="cd_code_fresh_on">Signs that library can be updated</string>
+    <string name="cd_code_like_off">Sign of not liked library</string>
+    <string name="cd_code_like_on">Sign of liked library</string>
+
+    <string name="fab_code_list_send_liked_empty">
+        I don\'t like any libraries, but SemiColon is cool. Check it out.
+    </string>
+
+    <string name="fab_code_list_send_fresh_empty">
+        There are no updated libraries at the moment, but SemiColon is cool. Check it out.
+    </string>
+
+    <!-- By translation keep in mind this little string separates library name and version
+    from homepage link -->
+    <string name="fab_code_list_send_at">\ at\ </string>
+
+    <!-- By translation please take care about goo positioning of parameters. -->
+    <string name="fab_code_list_send_liked">
+        I like those libraries, they are cool, Check out:\n\n%s
+    </string>
+
+    <!-- By translation please take care about goo positioning of parameters. -->
+    <string name="fab_code_list_send_fresh">
+        Update your libraries they have new version. Here they are:\n\n%s
+    </string>
+
+    <!-- Code Details Activity -->
+    <string name="activity_code_details_label">Library details</string>
+    <string name="activity_code_details_label_format">%s details</string>
+
+    <string name="cd_code_details_delete">Icon to delete library from the list.</string>
+
+    <string name="cd_code_details_delete_hidden">
+        Hidden deletion icon, library is always listed.
+    </string>
+
+    <string name="cd_code_details_liked">Icon to not like library because it\'s liked yet.</string>
+
+    <string name="cd_code_details_not_liked">
+        Icon to like library because it\'s not liked yet.
+    </string>
+
+    <string name="tv_code_details_latest_label">Latest version</string>
+    <string name="tv_code_details_homepage_label">Library\'s homepage</string>
+
+    <string name="tv_code_details_no_plus_version_info">
+        Additional version information not available.
+    </string>
+
+    <string name="tv_code_details_no_net_no_info">
+        Internet is needed to download additional version information.
+    </string>
+
+    <string name="tv_code_details_releases">Releases</string>
+    <string name="tv_code_details_major">Major versions</string>
+    <string name="tv_code_details_minor">Minor versions</string>
+    <string name="tv_code_details_version_name">Version number</string>
+    <string name="tv_code_details_version_number">Effective version</string>
+
+    <string name="snack_version_info_needs_network">
+        Please connect to the internet for additional software history.
+    </string>
+
+    <string name="snack_downloading_version_info">Downloading release history information…</string>
+
+    <string name="dialog_code_details_remove_title">Remove…</string>
+
+    <!-- By translation please take care about goo poistioning of parameters. -->
+    <string name="snack_uri_to_clipboard_format">%s copied to clipboard.</string>
+
+    <string name="fab_code_details_send_content">
+        The %s library is cool. Check it out at: %s
+    </string>
+
+    <string name="dialog_code_details_remove_message">
+        Do you really want to remove %s from the list?
+    </string>
+
+    <!-- Add Repository Activity -->
+    <string name="activity_add_repo_label">Add repository…</string>
+
+    <string name="tv_add_repo_explanation">
+        Please type the owner and name of the repository to add.
+    </string>
+
+    <string name="tv_add_repo_owner_label">Repository\'s owner:</string>
+    <string name="tv_add_repo_name_label">Repository\'s name:</string>
+    <string name="tv_add_repo_alias_label">Library name alias (optional):</string>
+
+    <string name="te_add_repo_owner_hint">Repository owner\'s username (ex. okaxel).</string>
+    <string name="te_add_repo_name_hint">Repository owner\'s username (ex. SemiColon).</string>
+    <string name="te_add_repo_alias_hint">Optional alias name (ex. This Application).</string>
+
+    <string name="btn_add_repo_add_text">Add repository</string>
+    <string name="btn_add_repo_no_text">Cancel</string>
+
+    <!-- Quotes Activity -->
+    <string name="activity_quotes_label">Quotes</string>
+
+    <string-array name="tab_labels_quote">
+        <item>Liked quotes</item>
+        <item>Actual quote</item>
+        <item>Hidden quotes</item>
+    </string-array>
+
+    <string name="tv_quotes_current">Current quote</string>
+
+    <string name="tv_no_quote_placeholder">No quotes available yet.</string>
+    <string name="tv_no_quote_hidden">You hided no quotes yet.</string>
+    <string name="tv_no_quote_liked">You liked no quotes yet.</string>
+
+    <string name="fab_quote_liked_empty">
+        I don\'t like a quote yet, but SemiColon provides one in each hour. Try it out.
+    </string>
+
+    <string name="fab_quote_liked">
+        Those are my favorite quotes from Semicolon. You can read all:\n\n
+    </string>
+
+    <string name="fab_quote_item_formatted">„%s” from %s</string>
+
+    <string name="fab_quote_hidden_empty">
+        I don\'t hided a quote yet, but SemiColon gives me this opportunity too. Try it out.
+    </string>
+
+    <string name="fab_quote_hidden">
+        Those are the quotes from Semicolon which I don\'t like. You better decide about them all:\n\n
+    </string>
+
+    <string name="fab_quote_now">I read a quote from %s:\n\n„%s”</string>
+
+    <string name="cd_quote_like">Button image to like this quote</string>
+    <string name="cd_quote_new">Button image to get a new quote</string>
+    <string name="cd_quote_hide">Button image to hide this quote</string>
+
+    <!-- Widget -->
+    <string name="add_widget">Add widget</string>
+
+    <string name="cd_widget_background">Background of the widget</string>
+    <string name="cd_widget_test">Test image conversion…</string>
+
+    <string name="widget_no_updates">No updates found.</string>
+    <string name="widget_updates_available">New updates available.</string>
+
+    <!-- From this line below do not translate! -->
+
+    <string name="repo_link_helper" translatable="false">https://github.com/%s/%s/</string>
+
+    <string name="details_code_tag" translatable="false">code</string>
+
+    <string name="simple_space" translatable="false">\ </string>
+
+    <!-- Firebase Analytics strings -->
+    <string name="fa_ad_click_activity_main">ad_click</string>
+    <string name="fa_first_start">first_start</string>
+    <string name="fa_user_engaged">user_engagement</string>
+
+    <string name="fa_campaign_id">get_a_nano_last_minute</string>
+
+    <string name="fa_item_code_door">code_main_door</string>
+    <string name="fa_item_quote_door">quote_main_door</string>
+
+    <string name="github_helper" translatable="false">https://github.com/%s/%s</string>
+
+</resources>

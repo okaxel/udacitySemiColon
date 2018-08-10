@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * ===
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ===
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="108dp"
+        android:height="108dp"
+        android:viewportWidth="100"
+        android:viewportHeight="100">
+    <group android:translateX="0.05">
+    
+        <group
+                android:translateX="559.18775"
+                android:translateY="66.38253">
+            <path
+                android:fillColor="#283593"
+                android:strokeWidth="0.78736073"
+                android:strokeLineJoin="bevel"
+                android:pathData="M -559.33765 -66.38253 H -459.33765 V 33.61747 H -559.33765 V -66.38253 Z" />
+        </group>
+    </group>
+</vector>

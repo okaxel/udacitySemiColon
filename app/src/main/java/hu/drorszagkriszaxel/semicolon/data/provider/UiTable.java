@@ -1,0 +1,53 @@
+package hu.drorszagkriszaxel.semicolon.data.provider;
+
+import net.simonvt.schematic.annotation.AutoIncrement;
+import net.simonvt.schematic.annotation.DataType;
+import net.simonvt.schematic.annotation.NotNull;
+import net.simonvt.schematic.annotation.PrimaryKey;
+
+/**
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * @author  Axel Ország-Krisz Dr.
+ * @version 1.0 - first try
+ *
+ * ---
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ---
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+ * ---
+ *
+ * Table data model interface for the Schematic Content Provider generator. This contains the structure
+ * of the table of the UI record
+ *
+ */
+public interface UiTable {
+
+    @DataType(DataType.Type.INTEGER) @PrimaryKey @AutoIncrement String _ID = "_id";
+    @DataType(DataType.Type.INTEGER) @NotNull String CODE_COUNT = "code_count";
+    @DataType(DataType.Type.INTEGER) @NotNull String CODE_LIKED = "code_liked";
+    @DataType(DataType.Type.INTEGER) @NotNull String CODE_FRESH = "code_fresh";
+    @DataType(DataType.Type.INTEGER) @NotNull String QUOTE_COUNT = "quote_count";
+    @DataType(DataType.Type.INTEGER) @NotNull String QUOTE_LIKED = "quote_liked";
+    @DataType(DataType.Type.INTEGER) @NotNull String QUOTE_HIDDEN = "quote_hidden";
+
+}

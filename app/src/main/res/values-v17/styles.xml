@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * ===
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ===
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+-->
+<resources>
+
+    <style name="Theme.SemiColon.Main.CardNest">
+
+        <item name="android:layout_marginStart">@dimen/main_cardnest_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/main_cardnest_margin_horizontal</item>
+
+        <item name="android:paddingTop">@dimen/main_cardnest_padding_top</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Main.Card">
+
+        <item name="android:layout_marginStart">@dimen/main_cards_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/main_cards_margin_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeList.Recycler">
+
+        <item name="android:paddingStart">@dimen/codelist_recycler_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/codelist_recycler_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.CardNest">
+
+        <item name="android:paddingTop">@dimen/codedetails_cardnest_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/codedetails_cardnest_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/codedetails_cardnest_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/codedetails_cardnest_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.InfoFrame">
+
+        <item name="android:paddingStart">@dimen/codedetails_card_frame_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/codedetails_card_frame_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.CardNest">
+
+        <item name="android:paddingTop">@dimen/quotes_cardnest_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/quotes_cardnest_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/quotes_cardnest_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/quotes_cardnest_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.InfoFrame">
+
+        <item name="android:paddingStart">@dimen/quotes_card_frame_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/quotes_card_frame_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Quotes.ItemLayout">
+
+        <item name="android:paddingStart">@dimen/quote_item_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/quote_item_padding_horizontal</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.AddRepo.CardNest">
+
+        <item name="android:paddingTop">@dimen/addrepo_cardnest_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/addrepo_cardnest_padding_vertical</item>
+        <item name="android:paddingStart">@dimen/addrepo_cardnest_padding_horiziontal</item>
+        <item name="android:paddingEnd">@dimen/addrepo_cardnest_padding_horiziontal</item>
+
+    </style>
+
+</resources>

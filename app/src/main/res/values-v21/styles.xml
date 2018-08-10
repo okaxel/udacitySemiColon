@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * ===
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ===
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+-->
+<resources>
+
+    <style name="Theme.SemiColon.AppBar">
+
+        <item name="android:background">@color/colorPrimary</item>
+
+        <item name="android:elevation">@dimen/appbar_elevation</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.Main.Card">
+
+        <item name="android:layout_marginLeft">@dimen/main_cards_margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/main_cards_margin_horizontal</item>
+
+        <item name="android:elevation">@dimen/card_elevation</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeList.Card">
+
+        <item name="android:layout_marginTop">@dimen/codelist_card_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/codelist_card_margin_vertical</item>
+
+        <item name="android:elevation">@dimen/card_elevation</item>
+
+    </style>
+
+</resources>
