@@ -149,7 +149,7 @@ public class QuoteTask extends AsyncTask<Void,Void,Quote> {
     protected void onPostExecute(@Nullable Quote quote) {
 
         super.onPostExecute(quote);
-        quoteListener.onResult(quote);
+        if (!isCancelled()) quoteListener.onResult(quote);
 
     }
 

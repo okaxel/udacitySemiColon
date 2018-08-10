@@ -118,6 +118,25 @@
     <string name="cd_code_like_off">Sign of not liked library</string>
     <string name="cd_code_like_on">Sign of liked library</string>
 
+    <string name="cd_code_list_fab_default">
+        Share fresh and liked libraries or add new repository…
+    </string>
+
+    <string name="cd_code_list_fab_codes">Add GitHub repository…</string>
+    <string name="cd_code_list_fab_liked">Share the list of libraries you like…</string>
+
+    <string name="cd_code_list_fab_liked_empty">
+        Share the fact that SemiColon helps to follow libraries you like…
+    </string>
+
+    <string name="cd_code_list_fab_fresh">
+        Share the list of libraries with new version updates…
+    </string>
+
+    <string name="cd_code_list_fab_fresh_empty">
+        Share the fact that SemiColon informs you about version updates…
+    </string>
+
     <string name="fab_code_list_send_liked_empty">
         I don\'t like any libraries, but SemiColon is cool. Check it out.
     </string>
@@ -151,6 +170,8 @@
     </string>
 
     <string name="cd_code_details_liked">Icon to not like library because it\'s liked yet.</string>
+
+    <string name="cd_code_details_fab">Share informations about this library…</string>
 
     <string name="cd_code_details_not_liked">
         Icon to like library because it\'s not liked yet.
@@ -224,6 +245,22 @@
     <string name="tv_no_quote_placeholder">No quotes available yet.</string>
     <string name="tv_no_quote_hidden">You hided no quotes yet.</string>
     <string name="tv_no_quote_liked">You liked no quotes yet.</string>
+
+    <string name="cd_quote_fab_default">Share quotes…</string>
+
+    <string name="cd_quote_fab_quote">Share this quote…</string>
+    <string name="cd_quote_fab_liked">Share the list of quotes you like…</string>
+
+    <string name="cd_quote_fab_liked_empty">
+        Share the fact that SemiColon provedis a quote each hour and you could even like them…
+    </string>
+
+    <string name="cd_quote_fab_hidden">Share the list of hidden quotes…</string>
+
+    <string name="cd_quote_fab_hidden_empty">
+        Share the fact that SemiColon a quote in each hour and althogh you could hide them you
+        didn\'t need it yet…
+    </string>
 
     <string name="fab_quote_liked_empty">
         I don\'t like a quote yet, but SemiColon provides one in each hour. Try it out.

@@ -85,9 +85,13 @@ import hu.drorszagkriszaxel.semicolon.utils.Connection;
  */
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
 
-    // AdMob keys with self explaining names...
-    private static final String ADMOB_APP_KEY = BuildConfig.ADMOB_APP_KEY;
-    private static final String ADMOB_TEST_DEVICE_ID = BuildConfig.ADMOB_TEST_DEVICE_ID;
+    /**
+     * AdMob keys with self explaining names...
+     *
+     * Yuo can copy those keys from the student notes [ADMob API keys] section.
+     */
+    private static final String ADMOB_APP_KEY = "ca-app-pub-6951376565292919~2138078335";
+    private static final String ADMOB_TEST_DEVICE_ID = "BFA91D4EBBB4B10A897F40020EA31FDD";
 
     @BindView(R.id.main_coordinator) CoordinatorLayout coordinatorLayout;
 

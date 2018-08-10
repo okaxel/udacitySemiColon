@@ -91,6 +91,8 @@ public class QuotesFragment extends Fragment {
     private Context context;
     private LinearLayoutManager linearLayoutManager;
 
+    QuoteTask quoteTask;
+
     /**
      * This is a required empty public constructor.
      */
@@ -169,13 +171,26 @@ public class QuotesFragment extends Fragment {
                         tvNoQuote.setVisibility(View.VISIBLE);
                         msgText = getString(R.string.fab_quote_liked_empty);
 
-                    } else msgText = getString(R.string.fab_quote_liked) + makeList(quotes);
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_quote_fab_liked_empty));
+
+                    } else {
+
+                        msgText = getString(R.string.fab_quote_liked) + makeList(quotes);
+
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_quote_fab_liked));
+
+                    }
 
                     break;
 
                 }
 
                 case 1: {
+
+                    floatingActionButton.setContentDescription(getString(
+                            R.string.cd_quote_fab_quote));
 
                     if (quote == null) {
 
@@ -187,6 +202,7 @@ public class QuotesFragment extends Fragment {
                     }
 
                     if (quote != null) refreshQuoteTab();
+
 
                     tvQuoteText.setOnClickListener(new View.OnClickListener() {
 
@@ -272,7 +288,18 @@ public class QuotesFragment extends Fragment {
                         tvNoQuote.setVisibility(View.VISIBLE);
                         msgText = getString(R.string.fab_quote_hidden_empty);
 
-                    } else msgText = getString(R.string.fab_quote_hidden) + makeList(quotes);
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_quote_fab_hidden_empty));
+
+
+                    } else {
+
+                        msgText = getString(R.string.fab_quote_hidden) + makeList(quotes);
+
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_quote_fab_hidden));
+
+                    }
 
                     break;
 
@@ -363,6 +390,17 @@ public class QuotesFragment extends Fragment {
     }
 
     /**
+     * Cancels AsyncTask if it's running.
+     */
+    @Override
+    public void onDetach() {
+
+        if (quoteTask != null && !quoteTask.isCancelled()) quoteTask.cancel(true);
+        super.onDetach();
+
+    }
+
+    /**
      * Gets a random quote from the internet
      *
      * @param withUpdate Determines whether update Widget or not
@@ -390,7 +428,8 @@ public class QuotesFragment extends Fragment {
 
             }
         };
-        QuoteTask quoteTask = new QuoteTask(quoteListener);
+
+        quoteTask = new QuoteTask(quoteListener);
         quoteTask.execute();
 
     }
@@ -424,20 +463,24 @@ public class QuotesFragment extends Fragment {
      */
     private void refreshQuoteTab() {
 
-        tvQuoteText.setText(getString(R.string.quote_formatted,quote.getText()));
-        tvQuoteAuthor.setText(quote.getAuthor());
+        if (getActivity() != null) {
 
-        msgText = getString(R.string.fab_quote_now,quote.getAuthor(),quote.getText());
+            tvQuoteText.setText(getString(R.string.quote_formatted,quote.getText()));
+            tvQuoteAuthor.setText(quote.getAuthor());
 
-        if (quote.getState() == Quote.STATE_LIKED)
-            ibQuoteLike.setImageResource(R.drawable.ic_star_border);
-        else ibQuoteLike.setImageResource(R.drawable.ic_star_border_inactive);
+            msgText = getString(R.string.fab_quote_now,quote.getAuthor(),quote.getText());
 
-        if (quote.getState() == Quote.STATE_HIDDEN)
-            ibQuoteHide.setImageResource(R.drawable.ic_hidden);
-        else ibQuoteHide.setImageResource(R.drawable.ic_hidden_inactive);
+            if (quote.getState() == Quote.STATE_LIKED)
+                ibQuoteLike.setImageResource(R.drawable.ic_star_border);
+            else ibQuoteLike.setImageResource(R.drawable.ic_star_border_inactive);
 
-        cardQuote.setVisibility(View.VISIBLE);
+            if (quote.getState() == Quote.STATE_HIDDEN)
+                ibQuoteHide.setImageResource(R.drawable.ic_hidden);
+            else ibQuoteHide.setImageResource(R.drawable.ic_hidden_inactive);
+
+            cardQuote.setVisibility(View.VISIBLE);
+
+        }
 
     }
 

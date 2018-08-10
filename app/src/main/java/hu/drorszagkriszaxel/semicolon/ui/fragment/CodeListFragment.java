@@ -133,10 +133,22 @@ import hu.drorszagkriszaxel.semicolon.ui.CodeDetailsActivity;
                 case 0: {
 
                     codes = LocalData.getLikedCodes(getContext().getContentResolver());
-                    if (codes != null) msgText = getString(R.string.fab_code_list_send_liked,
-                            makeLikedList(codes));
+                    if (codes != null) {
 
-                    else msgText = getString(R.string.fab_code_list_send_liked_empty);
+                        msgText = getString(R.string.fab_code_list_send_liked,
+                                makeLikedList(codes));
+
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_code_list_fab_liked));
+
+                    } else {
+
+                        msgText = getString(R.string.fab_code_list_send_liked_empty);
+
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_code_list_fab_liked_empty));
+
+                    }
 
                     floatingActionButton.setImageResource(R.drawable.ic_share);
 
@@ -171,6 +183,10 @@ import hu.drorszagkriszaxel.semicolon.ui.CodeDetailsActivity;
                     final Intent repoIntent = new Intent(getContext(),AddRepoActivity.class);
 
                     floatingActionButton.setImageResource(R.drawable.ic_add);
+
+                    floatingActionButton.setContentDescription(getString(
+                            R.string.cd_code_list_fab_codes));
+
                     floatingActionButton.setOnClickListener(new View.OnClickListener() {
 
                         @Override
@@ -191,9 +207,23 @@ import hu.drorszagkriszaxel.semicolon.ui.CodeDetailsActivity;
 
                     codes = LocalData.getFreshCodes(getContext().getContentResolver());
 
-                    if (codes != null) msgText = getString(R.string.fab_code_list_send_fresh,
-                            makeFreshList(codes));
-                    else msgText = getString(R.string.fab_code_list_send_fresh_empty);
+                    if (codes != null) {
+
+                        msgText = getString(R.string.fab_code_list_send_fresh,
+                                makeFreshList(codes));
+
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_code_list_fab_fresh));
+
+                    } else {
+
+                        msgText = getString(R.string.fab_code_list_send_fresh_empty);
+
+                        floatingActionButton.setContentDescription(getString(
+                                R.string.cd_code_list_fab_fresh_empty));
+
+
+                    }
 
                     noDataMsg = getString(R.string.tv_no_code_fresh);
 

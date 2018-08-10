@@ -22,21 +22,14 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
-
-        // AdMob SemiColom application key
-        buildConfigField("String", "ADMOB_APP_KEY", ADMOB_APP_KEY)
-
-        // AdMob Test Device Id
-        buildConfigField("String", "ADMOB_TEST_DEVICE_ID", ADMOB_TEST_DEVICE_ID)
-
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.SignConfig
         }
         debug {
-            signingConfig signingConfigs.SignConfig
         }
     }
 }

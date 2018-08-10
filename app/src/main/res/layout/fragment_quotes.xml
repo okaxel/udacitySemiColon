@@ -150,6 +150,7 @@
             android:layout_marginRight="24dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
+            android:contentDescription="@string/cd_quote_fab_default"
             app:srcCompat="@drawable/ic_share"/>
     </android.support.design.widget.CoordinatorLayout>
 </FrameLayout>

@@ -229,5 +229,6 @@
         android:layout_marginRight="24dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
+        android:contentDescription="@string/cd_code_details_fab"
         app:srcCompat="@drawable/ic_share"/>
 </android.support.design.widget.CoordinatorLayout>
