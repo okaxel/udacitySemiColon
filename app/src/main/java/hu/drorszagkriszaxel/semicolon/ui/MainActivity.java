@@ -395,7 +395,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     /**
-     * Makes a SnackBar message.
+     * Makes a SnackBar message from string.
      *
      * @param string String to display
      */
