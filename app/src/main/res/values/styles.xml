@@ -169,6 +169,14 @@
 
     </style>
 
+    <style name="Theme.SemiColon.CodeDetails.ErrorBoxLand">
+
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorTextPlaceholder</item>
+        <item name="android:textSize">@dimen/text_headline_size</item>
+
+    </style>
+
     <style name="Theme.SemiColon.CodeDetails.InfoFrame">
 
         <item name="android:paddingLeft">@dimen/codedetails_card_frame_padding_horizontal</item>
@@ -207,6 +215,14 @@
     <style name="Theme.SemiColon.CodeDetails.VersionCard">
 
         <item name="android:layout_marginTop">@dimen/codedetails_versioncard_margin_top</item>
+
+    </style>
+
+    <style name="Theme.SemiColon.CodeDetails.VersionCardLand">
+
+        <item name="android:layout_marginLeft">
+            @dimen/codedetails_versioncard_margin_start_landscape
+        </item>
 
     </style>
 

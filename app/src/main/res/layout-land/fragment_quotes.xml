@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * SemiColon
+ *
+ * © 2018 by Axel Ország-Krisz Dr.
+ *
+ * ===
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ===
+ *
+ * For more information and source check out:
+ *
+ * https://github.com/okaxel/udacitySemiColon
+ *
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.CodeListFragment">
+    <TextView
+        android:id="@+id/tv_no_quote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/tv_no_quote_placeholder"
+        android:visibility="gone"
+        style="@style/Theme.SemiColon.Quotes.NoData"/>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/quotes_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/Theme.SemiColon.Quotes.CardNest">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/quotes_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:listItem="@layout/recycleview_quotes_item"/>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/quote_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/Theme.SemiColon.CodeDetails.InfoFrame">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_quotes_current"
+                            style="@style/Theme.SemiColon.Quotes.Label"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorTextPlaceholder"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    style="@style/Theme.SemiColon.Quotes.ButtonsNest">
+                                    <ImageButton
+                                        android:id="@+id/ib_quote_like"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitCenter"
+                                        android:background="@android:color/transparent"
+                                        app:srcCompat="@drawable/ic_star_border_inactive"
+                                        android:contentDescription="@string/cd_quote_like"
+                                        tools:ignore="TooDeepLayout" />
+                                    <ImageButton
+                                        android:id="@+id/ib_quote_new"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitCenter"
+                                        android:background="@android:color/transparent"
+                                        app:srcCompat="@drawable/ic_fresh_inactive"
+                                        android:contentDescription="@string/cd_quote_new"/>
+                                    <ImageButton
+                                        android:id="@+id/ib_quote_hide"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitCenter"
+                                        android:background="@android:color/transparent"
+                                        app:srcCompat="@drawable/ic_hidden_inactive"
+                                        android:contentDescription="@string/cd_quote_hide"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorTextPlaceholder"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginStart="16dp"/>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tv_quote_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/quote_placeholder"
+                                    style="@style/Theme.SemiColon.Quotes.Text"/>
+                                <TextView
+                                    android:id="@+id/tv_quote_author"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/author_placeholder"
+                                    style="@style/Theme.SemiColon.Quotes.Author"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_quotes"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/cd_quote_fab_default"
+            app:srcCompat="@drawable/ic_share"/>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
